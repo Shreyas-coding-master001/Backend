@@ -1,0 +1,66 @@
+// #root{
+//     height: 100%;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+// }
+
+#Login-User{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:  2px solid #ccc;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    width: 40%;
+
+    h2{
+        margin-bottom: 1rem;
+        color: red;
+    }
+
+    form{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+        input{
+            margin: 0.5rem 0;
+            padding: 10px;
+            width: 200px;
+            border-radius: 1rem;
+        }
+
+        button{
+            padding: 10px 20px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+
+            &:hover{
+                background-color: crimson;
+            }
+        }
+
+        p .Navigate-TO{
+            text-decoration: none;
+            color: rgb(255, 87, 87);
+            cursor: pointer;
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}

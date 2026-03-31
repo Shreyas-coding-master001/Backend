@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body, #root{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(20, 20, 20);
+    color: whitesmoke;
+}
+
+#root button{
+    cursor: pointer;
+}
+#root button:active{
+    scale: 0.95;
+}
