@@ -1,4 +1,74 @@
-.env
-.env/*
+# -------------------------
+# Operating system files
+# -------------------------
+.DS_Store
+Thumbs.db
+Desktop.ini
 
-/Day34-gen-ai/.env
+# -------------------------
+# Editor and IDE files
+# -------------------------
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# -------------------------
+# Environment and secrets
+# -------------------------
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# Local environment-specific files
+*.local
+*.pem
+*.key
+*.crt
+
+# -------------------------
+# Logs and runtime output
+# -------------------------
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# -------------------------
+# Node.js dependencies and build output
+# -------------------------
+node_modules/
+coverage/
+dist/
+build/
+out/
+.cache/
+.next/
+.nuxt/
+.temp/
+tmp/
+temp/
+.DS_Store
+
+# -------------------------
+# Test and package manager artifacts
+# -------------------------
+.DS_Store
+coverage/
+.nyc_output/
+package-lock.json
+
+# -------------------------
+# Common generated files
+# -------------------------
+*.pid
+*.seed
+*.pid.lock
+
+# Ignore Day34-gen-ai environment file specifically
+/Day34-gen-ai/.envv
