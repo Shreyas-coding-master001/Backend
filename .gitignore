@@ -71,4 +71,5 @@ package-lock.json
 *.pid.lock
 
 # Ignore Day34-gen-ai environment file specifically
-/Day34-gen-ai/.envv
+/Day34-gen-ai/.env
+/Day35-genAi-tools/.env
