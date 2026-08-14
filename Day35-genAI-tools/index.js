@@ -2,6 +2,7 @@ import readline from "node:readline/promises";
 import { ChatMistralAI  } from "@langchain/mistralai";
 import { createAgent, HumanMessage, tool } from "langchain";
 import { sendEmail } from "./email.js";
+import searchWeb from "./travily.js";
 import "dotenv/config";
 import * as z from "zod";
 
@@ -29,9 +30,17 @@ const emailTool = tool(
     }
 );
 
+const webSearch_tool = tool(searchWeb, {
+    name: "web_search",
+    description: "Search the web and retrieve relevant information from web pages using the Tavily API.",
+    parameters: z.object({
+        query: z.string().describe("The search query to find relevant information on the web.")
+    })
+});
+
 const agent = createAgent({
     model,
-    tools : [emailTool]
+    tools : [emailTool, webSearch_tool]
 })
 
 const messages = [];
